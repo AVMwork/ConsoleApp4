@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp4
+namespace ConsoleApp4 
 {
     class Student
     {
@@ -29,6 +29,10 @@ namespace ConsoleApp4
             return masiv;
         }
 
+        public bool IComparable(Student rhv)
+        {
+            return Name.Length > rhv.Name.Length;
+        }
     }
 
 }
